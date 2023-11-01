@@ -5,7 +5,6 @@ export default function CoverPage() {
   return (
         <iframe
           src="https://sanimesh96.github.io/"
-          frameborder="0"
           width="100%"
           title="project-x-cover"
         ></iframe>
