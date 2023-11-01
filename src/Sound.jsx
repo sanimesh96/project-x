@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import interStellarSong from "./Interstellar-Theme.mp3";
 
-export default function SoundComponent({ isPlaying }) {
+export default function SoundComponent() {
 
   useEffect(() => {
     const audioElement = document.getElementById("soundplayer");

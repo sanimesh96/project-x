@@ -1,7 +1,7 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import CoverPage from './CoverPage';
-import Test from './Test';
+import Letter from './Letter';
 
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<CoverPage />}/>
-        <Route exact path="/test" element={<Test />}/>
+        <Route exact path="/letter" element={<Letter />}/>
+        <Route path="*" element={<Navigate to="/" />}/>
       </Routes>
     </BrowserRouter>
   );
