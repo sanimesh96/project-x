@@ -1,12 +1,17 @@
-import Sound from 'react-sound';
-import React, {useState,useEffect} from 'react';
-import interStellarSong from './Interstellar-Theme.mp3'
+import React, { useEffect } from "react";
+import interStellarSong from "./Interstellar-Theme.mp3";
 
-export default function SoundComponent ({isPlaying}) {
+export default function SoundComponent({ isPlaying }) {
+
+  useEffect(() => {
+    const audioElement = document.getElementById("soundplayer");
+    audioElement.play();
+    audioElement.currentTime = 30;
+  },[])
 
   return (
     <>
-      {isPlaying && <Sound url={interStellarSong} playStatus={isPlaying ? Sound.status.PLAYING : "PAUSED"} playFromPosition={20000} />}
+      <audio src={interStellarSong} id  = "soundplayer" />
     </>
   );
-};
+}

@@ -6,18 +6,30 @@ export default function Test() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   function handleToggle() {
-    setIsPlaying(true);
+    setIsPlaying(!isPlaying);
   }
 
   return (
     <div className="test-container">
       <input
         id="toggle"
-        class="toggle"
+        className="toggle"
         type="checkbox"
         onClick={handleToggle}
       />
-      <div class="background">
+
+      {!isPlaying && (
+        <>
+          <label htmlFor="toggle" className="title">
+            Why is it so dark here?
+          </label>
+          <label htmlFor="toggle" className="title">
+            Turn up the light.
+          </label>
+        </>
+      )}
+
+      <div className="background">
         {isPlaying && (
           <>
             <TypeAnimation
@@ -37,7 +49,7 @@ export default function Test() {
               }}
               speed={30}
             />
-            <SoundComponent isPlaying={isPlaying} />
+            <SoundComponent isPlaying = {isPlaying}/>
           </>
         )}
       </div>

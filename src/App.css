@@ -81,7 +81,6 @@ iframe {
   }
 }
 
-// magic
 .toggle {
   --size: 2rem;
   
@@ -119,7 +118,6 @@ iframe {
 }
 
 
-// magic
 .toggle {
   --size: 2rem;
   
@@ -165,7 +163,7 @@ iframe {
 }
 
 .background {
-  --bg: hsl(240, 100%, 10%);
+  --bg: hsla(0, 0%, 0%, 0.92);
   background: var(--bg);
   position: fixed;
   height: 100vh;
