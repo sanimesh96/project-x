@@ -224,6 +224,8 @@ iframe {
   display: inline-block;
   font-family: Montserrat;
   white-space: pre-line;
+  overflow-y: auto;
+  height: 80vh;
 }
 
 @media screen and (max-width : 500px) {
