@@ -61,7 +61,7 @@ iframe {
 
 @media screen and (max-width: 500px){
   .redirect-btn{
-
+    top : 56%;
     left: 25vw;
   }
 }
