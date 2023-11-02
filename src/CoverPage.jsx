@@ -16,7 +16,7 @@ export default function CoverPage() {
   return (
     <>
       <iframe
-        src="http://sanimesh96.github.io"
+        src="https://sanimesh96.github.io/"
         width="100%"
         title="project-x-cover"
         id="project-x-cover"
