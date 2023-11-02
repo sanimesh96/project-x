@@ -218,3 +218,16 @@ iframe {
   padding: 0.5rem 0 0;
   transition: color 500ms;
 }
+
+.automatic-typing{
+  font-size: 1.5em;
+  display: inline-block;
+  font-family: Montserrat;
+  white-space: pre-line;
+}
+
+@media screen and (max-width : 500px) {
+    .automatic-typing{
+      font-size: 1em;
+    }
+}
