@@ -11,7 +11,7 @@ export default function Letter() {
   }
 
   return (
-    <div className="test-container">
+    <div className="theme-container">
       
       <input
         id="toggle"
@@ -26,7 +26,7 @@ export default function Letter() {
             Why is it so dark here?
           </label>
           <label htmlFor="toggle" className="title">
-            Turn up the light.
+            Let's turn up the light.
           </label>
         </>
       )}
