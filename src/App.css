@@ -45,6 +45,28 @@ iframe {
   width: 100vw;
 }
 
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.redirect-btn{
+  font-family : Work Sans;
+  position : absolute;
+  top : 50%;
+  left : 42%;
+  animation: fadeIn 4s;
+}
+
+@media screen and (max-width: 500px){
+  .redirect-btn{
+
+    left: 25vw;
+  }
+}
+
+
 .toggle {
   --size: 2rem;
   
